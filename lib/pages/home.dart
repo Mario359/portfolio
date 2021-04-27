@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
                   text: "Travaux pratiques",
                 ),
                 imageBackground:
-                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                    'https://live.staticflickr.com/1168/860181962_7aa9182419_b.jpg',
                 modePage: true,
                 routePage: '/tp',
               ),
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
                   text: "Situation professionnelle: SafiFees",
                 ),
                 imageBackground:
-                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Royal_London_Hospital_redevelopment.jpg/1200px-Royal_London_Hospital_redevelopment.jpg',
                 modePage: true,
                 routePage: '/sp1',
               ),
@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
                   text: "Situation professionnelle: 7Activity",
                 ),
                 imageBackground:
-                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                    'https://images.ladepeche.fr/api/v1/images/view/5d923f48d286c24619016695/large/image.jpg',
                 modePage: true,
                 routePage: '/sp2',
               ),
@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
                   text: "Stage",
                 ),
                 imageBackground:
-                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                    'https://docs.plans-constructeurs-maisons.fr/MaisonsFranceConfort/2578536/la-maison-a-etage.jpg',
                 modePage: true,
                 routePage: '/stage',
               ),
