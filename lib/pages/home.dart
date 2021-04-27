@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/pages/pratical_work.dart';
 import 'package:portfolio/summary_item.dart';
 import 'package:portfolio/widget/title_summary_item.dart';
 
@@ -40,13 +39,31 @@ class _HomeState extends State<Home> {
               ),
               SummaryItem(
                 title: TitleSummaryItem(
-                  text: "Une autre page",
+                  text: "Situation professionnelle: SafiFees",
                 ),
                 imageBackground:
                     'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
                 modePage: true,
-                routePage: '/',
-              )
+                routePage: '/sp1',
+              ),
+              SummaryItem(
+                title: TitleSummaryItem(
+                  text: "Situation professionnelle: 7Activity",
+                ),
+                imageBackground:
+                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                modePage: true,
+                routePage: '/sp2',
+              ),
+              SummaryItem(
+                title: TitleSummaryItem(
+                  text: "Stage",
+                ),
+                imageBackground:
+                    'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
+                modePage: true,
+                routePage: '/stage',
+              ),
             ]))
       ],
     )));
