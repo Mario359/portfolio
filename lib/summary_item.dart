@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 
+import 'widget/title_summary_item.dart';
+
 class SummaryItem extends StatefulWidget {
-  SummaryItem({Key key, this.title, this.imageBackground, this.materialPage})
+  SummaryItem(
+      {Key key,
+      this.title,
+      this.imageBackground,
+      this.routePage,
+      this.modePage})
       : super(key: key);
 
   //title est en Text, ce qui permet de modifier son style
-  final Text title;
+  final TitleSummaryItem title;
   //imageBackground est en String, pas en Image car je ne veux pas qu'on puisse modifier sa mise en forme
+  //Il faut que ce soit un lien Internet
   final String imageBackground;
-  final MaterialPageRoute materialPage;
+  final String routePage;
+  //Vérifie s'il faut ouvrir une nouvelle page ou juste une alerte
+  final bool modePage;
 
   @override
   _SummaryItemState createState() => _SummaryItemState();
@@ -19,7 +29,9 @@ class _SummaryItemState extends State<SummaryItem> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, widget.materialPage);
+        widget.modePage
+            ? Navigator.pushNamed(context, widget.routePage)
+            : print("Pas le mode page");
       },
       child: Stack(
         children: [
@@ -29,8 +41,11 @@ class _SummaryItemState extends State<SummaryItem> {
             height: double.infinity,
             width: double.infinity,
           ),
-          Center(
-            child: widget.title,
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Center(
+              child: widget.title,
+            ),
           )
         ],
       ),

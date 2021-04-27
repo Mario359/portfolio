@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/pratical_work.dart';
 import 'package:portfolio/summary_item.dart';
+import 'package:portfolio/widget/title_summary_item.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -27,38 +29,23 @@ class _HomeState extends State<Home> {
                 childAspectRatio: 2.0),
             delegate: SliverChildListDelegate([
               SummaryItem(
-                title: Text(
-                  "Une page",
-                  style: TextStyle(
-                      fontSize: 32.0,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(10.0, 10.0),
-                            blurRadius: 2.0,
-                            color: Colors.black)
-                      ]),
+                //ça marche ça ?
+                title: TitleSummaryItem(
+                  text: "Travaux pratiques",
                 ),
                 imageBackground:
                     'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
-                materialPage: MaterialPageRoute(builder: (context) => Home()),
+                modePage: true,
+                routePage: '/tp',
               ),
               SummaryItem(
-                title: Text(
-                  "Une autre page",
-                  style: TextStyle(
-                      fontSize: 32.0,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                            offset: Offset(10.0, 10.0),
-                            blurRadius: 2.0,
-                            color: Colors.black)
-                      ]),
+                title: TitleSummaryItem(
+                  text: "Une autre page",
                 ),
                 imageBackground:
                     'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
-                materialPage: MaterialPageRoute(builder: (context) => Home()),
+                modePage: true,
+                routePage: '/',
               )
             ]))
       ],
