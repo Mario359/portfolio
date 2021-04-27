@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/summary_item.dart';
+import 'package:portfolio/widget/summary_item.dart';
 import 'package:portfolio/widget/title_summary_item.dart';
 
 class PraticalWork extends StatefulWidget {
@@ -24,7 +24,7 @@ class _PraticalWorkState extends State<PraticalWork> {
           ),
           SliverGrid(
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                  maxCrossAxisExtent: 720.0,
+                  maxCrossAxisExtent: 480.0,
                   mainAxisSpacing: 2.0,
                   crossAxisSpacing: 2.0,
                   childAspectRatio: 2.0),
@@ -36,6 +36,9 @@ class _PraticalWorkState extends State<PraticalWork> {
                   imageBackground:
                       'https://1.bp.blogspot.com/-vFRhACmbKzk/YD1rhezcy9I/AAAAAAAAJ3k/AKfGALIMfNQUXjzGxDQ6cbcMFXPt2_r0QCLcBGAsYHQ/s0/image%2B1.png',
                   modePage: false,
+                  content: Container(
+                    child: Text("Un petit texte"),
+                  ),
                 )
               ]))
         ],

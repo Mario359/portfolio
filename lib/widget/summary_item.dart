@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widget/title_summary_item.dart';
+import 'title_summary_item.dart';
 
 class SummaryItem extends StatefulWidget {
   SummaryItem(
@@ -8,7 +8,8 @@ class SummaryItem extends StatefulWidget {
       this.title,
       this.imageBackground,
       this.routePage,
-      this.modePage})
+      this.modePage,
+      this.content})
       : super(key: key);
 
   //title est en Text, ce qui permet de modifier son style
@@ -19,6 +20,8 @@ class SummaryItem extends StatefulWidget {
   final String routePage;
   //Vérifie s'il faut ouvrir une nouvelle page ou juste une alerte
   final bool modePage;
+  //Affiche un container, quand l'item n'est pas une route
+  final Container content;
 
   @override
   _SummaryItemState createState() => _SummaryItemState();
@@ -31,7 +34,9 @@ class _SummaryItemState extends State<SummaryItem> {
       onTap: () {
         widget.modePage
             ? Navigator.pushNamed(context, widget.routePage)
-            : print("Pas le mode page");
+            : showDialog(
+                context: (context),
+                builder: (context) => AlertDialog(content: widget.content));
       },
       child: Stack(
         children: [

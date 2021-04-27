@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/summary_item.dart';
+import 'package:portfolio/widget/summary_item.dart';
 import 'package:portfolio/widget/title_summary_item.dart';
 
 class Home extends StatefulWidget {
