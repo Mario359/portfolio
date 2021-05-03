@@ -20,7 +20,9 @@ class _TitleSummaryItemState extends State<TitleSummaryItem> {
           color: Colors.white,
           shadows: [
             Shadow(
-                offset: Offset(0.0, 0.0), blurRadius: 2.0, color: Colors.black)
+                offset: Offset(0.0, 0.0), blurRadius: 3.0, color: Colors.black),
+            Shadow(
+                offset: Offset(0.0, 0.0), blurRadius: 2.0, color: Colors.black),
           ]),
     );
   }
