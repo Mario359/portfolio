@@ -14,9 +14,14 @@ class _TitleSummaryItemState extends State<TitleSummaryItem> {
   Widget build(BuildContext context) {
     return Text(
       widget.text,
-      style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold, shadows: [
-        Shadow(offset: Offset(0.0, 0.0), blurRadius: 2.0, color: Colors.black)
-      ]),
+      style: TextStyle(
+          fontSize: 32.0,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+          shadows: [
+            Shadow(
+                offset: Offset(0.0, 0.0), blurRadius: 2.0, color: Colors.black)
+          ]),
     );
   }
 }
