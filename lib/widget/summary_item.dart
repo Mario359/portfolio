@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import 'title_summary_item.dart';
@@ -40,8 +41,8 @@ class _SummaryItemState extends State<SummaryItem> {
       },
       child: Stack(
         children: [
-          Image.network(
-            widget.imageBackground,
+          CachedNetworkImage(
+            imageUrl: widget.imageBackground,
             fit: BoxFit.cover,
             height: double.infinity,
             width: double.infinity,
