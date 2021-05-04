@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/pages/personnal.dart';
 import 'package:portfolio/pages/pratical_work.dart';
 import 'package:portfolio/pages/professional_situation_2.dart';
 import 'package:portfolio/pages/traineeship.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
         '/tp': (context) => PraticalWork(),
         '/sp1': (context) => ProfessionalSituation1(),
         '/sp2': (context) => ProfessionalSituation2(),
-        '/stage': (context) => Traineeship()
+        '/stage': (context) => Traineeship(),
+        '/personnal': (context) => Personnal()
       },
     );
   }

@@ -62,7 +62,16 @@ class _HomeState extends State<Home> {
                 imageBackground:
                     'https://docs.plans-constructeurs-maisons.fr/MaisonsFranceConfort/2578536/la-maison-a-etage.jpg',
                 modePage: true,
-                routePage: '/stage',
+                routePage: '/personnal',
+              ),
+              SummaryItem(
+                title: TitleSummaryItem(
+                  text: "Personnel",
+                ),
+                imageBackground:
+                    'https://mk0businessofem29abh.kinstacdn.com/wp-content/uploads/2020/10/iStock-1254646139.jpg',
+                modePage: true,
+                routePage: '/personnal',
               ),
             ]))
       ],
